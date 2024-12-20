@@ -62,7 +62,7 @@ header.hero {
 /* Ajustes para dispositivos móviles */
 @media (max-width: 768px) {
   header.hero {
-    background-position: center top;
+    background-position: center;
     padding-bottom: 40px;
   }
 
@@ -204,6 +204,12 @@ h1.heading.pink:after {
   background: #fff;
 }
 
+.client-swiper,
+.testimonial-swiper {
+  width: 100%;
+  overflow: hidden; /* Esto ayudará a evitar que se desborde el contenido */
+}
+
 .client-box {
   background-color: #fff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.03);
@@ -249,6 +255,30 @@ h1.heading.pink:after {
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
+  position: absolute;
+  top: 50%; /* Se posicionan en el centro vertical */
+  transform: translateY(-50%);
+  z-index: 10;
+}
+/* Cambiar la posición de las flechas en dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: fixed; /* Las flechas se fijan en la parte inferior de la pantalla */
+    bottom: 20px; /* Espaciado desde la parte inferior */
+    transform: translateX(-50%); /* Centrarlas horizontalmente */
+    left: 50%; /* Centrarlas horizontalmente */
+  }
+
+  .swiper-button-next {
+    right: auto;
+    left: 50%; /* Asegura que la flecha siguiente esté centrada */
+  }
+
+  .swiper-button-prev {
+    right: auto;
+    left: 50%; /* Asegura que la flecha anterior esté centrada */
+  }
 }
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
