@@ -383,6 +383,11 @@
         slidesPerView: 2,
         spaceBetween: 40,
       },
+      // when window width is <= 1024px
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 50,
+      },
         },
       });
       // Initialize Testimonial Swiper
@@ -414,10 +419,16 @@
         slidesPerView: 2,
         spaceBetween: 20,
       },
+       // when window width is <= 1024px
+       1024: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
         },
       });
     </script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+     <script src="js/swiper.jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
     <script src="js/jquery.counterup.min.js"></script>
   <script src="js/custom.js" ></script>
@@ -427,10 +438,6 @@
         time: 1000,
       });
 
-      // Main Navigation
-      $('#menu-toggle').click(function () {
-        $(this).toggleClass('open'), $('.main-nav').toggleClass('show-it');
-      });
     </script>
   
 

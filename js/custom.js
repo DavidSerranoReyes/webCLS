@@ -80,3 +80,8 @@ function closeModal(modalId) {
   const modal = document.getElementById(modalId);
   modal.classList.remove('show');
 }
+
+// Main Navigation
+$('#menu-toggle').click(function () {
+  $(this).toggleClass('open'), $('.main-nav').toggleClass('show-it');
+});
