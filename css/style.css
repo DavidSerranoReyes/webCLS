@@ -44,6 +44,10 @@ img {
 .blue {
   color: #38576e;
 }
+header.hero {
+  background-position: center center; /* Asegura que la imagen se centre */
+  background-attachment: scroll; /* Evita el efecto de paralaje en móviles */
+}
 
 /* Hero Section */
 header.hero {
@@ -462,6 +466,7 @@ ul.main-nav.show-it {
   header.hero {
     text-align: center;
     padding-bottom: 0;
+    background-size: cover;
   }
   header.hero h1 {
     font-size: 2em;
@@ -563,8 +568,9 @@ body {
   background-color: #fff;
   padding: 2em;
   width: 90%;
-  max-width: 1000px; /* Tamaño máximo del contenido del modal */
+  max-width: 600px; /* Tamaño máximo del contenido del modal */
   max-height: 90vh; /* Máxima altura relativa al alto de la pantalla */
+  overflow-y: auto; /* Permite desplazamiento si el contenido es muy largo */
   border-radius: 10px; /* Bordes redondeados */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra alrededor del modal */
   color: #000;
@@ -598,6 +604,10 @@ body {
 /* Cambio de estilo al pasar el mouse sobre el enlace */
 .modal-content a:hover {
   text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+.modal-content img {
+  width: 100%;
+  height: auto;
 }
 
 /* Botón de cierre dentro del modal */
@@ -641,5 +651,20 @@ body {
 @media (max-width: 767px) {
   .client-logo {
     cursor: pointer; /* Cambia el cursor para que se vea que la imagen es interactiva */
+  }
+
+  ul.main-nav {
+    display: none;
+  }
+  ul.main-nav.show-it {
+    display: block;
+  }
+}
+@media (max-width: 720px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: block;
+    width: 50px;
+    height: 50px;
   }
 }
