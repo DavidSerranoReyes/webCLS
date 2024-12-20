@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Carla Larrea Sanchez</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-theme.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:300,400,700"
+      rel="stylesheet"
+    />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-6 col-xs-12">
+            <nav>
+              <div id="menu-toggle">
+                <div class="hamburger">
+                  <span class="line"></span>
+                  <span class="line"></span>
+                  <span class="line"></span>
+                </div>
+                <div class="cross">
+                  <span class="line"></span>
+                  <span class="line"></span>
+                </div>
+              </div>
+              <ul class="main-nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
+            <!-- <a href="#" class="menu"><img src="assets/menu.png"></a> -->
+            <div class="hero-text">
+              <h1>
+                <span>Carla</span>
+                <span style="font-weight: bold;">Larrea Sanchez</span>
+              </h1>
+              
+              <h3>Cineasta</h3>
+              <a href="#" class="btn btn-lg btn-primary">Saber mas</a>
+              <ul class="social-links">
+                <li class="label">Sigueme</li>
+                <li>
+                  <a href="https://www.instagram.com/carlilasan" target="_blank">
+                    <img src="assets/logoinstawhite.png" alt="Instagram" />
+                </li>
+                <li>
+                  <a href="#"><img src="assets/logofbwhite.png" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="assets/imdb1.png" /></a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="portfolio"></section>
+    <section class="case-study">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h4 class="sub-heading">Portfolio</h4>
+            <h1 class="heading purple">
+              <span class="purple">Trabajos</span>
+              realizados
+              <br />
+              by Carla Larrea
+            </h1>
+            <!-- Swiper -->
+            <div class="swiper-container client-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide client-box">
+                  <h3 class="text-left title">DIRECCIÓN</h3>
+                  <img src="assets/Magda4-1.jpg" class="client-logo"  onclick="openModal('direccionModal', 'Magda')" />
+                  <p class="text-left tag">“Por Magda”. (Cortometraje de ficción). México-Ecuador. 2022. 422. Color. (CCC.).</p>                
+                  <p class="text-left"><a href="https://www.imdb.com/title/tt26711407/?ref_=nm_ov_bio_lk"target="_blank">Haz clic aquí</a></p>
+                  <img src="assets/Indeleble_cortometraje_carla.jpg" class="client-logo"  onclick="openModal('direccionModal', 'Indeleble')" />
+                  <p class="text-left tag">“Indeleble”. (Cortometraje de ficción). México D.F., México 2016. 16 mm. Cortometraje
+                    Color. (CCC).                 
+                  <p class="text-left"><a href="https://www.imdb.com/es/title/tt5228618/"target="_blank">Haz clic aquí</a></p>
+                </div>
+                <div class="swiper-slide client-box">
+                  <h3 class="text-left title">PRODUCCIÓN</h3>
+                 <img src="assets/Magda-1.jpg" class="client-logo"  onclick="openModal('direccionModal', 'Magda1')" />
+                  <p class="text-left ta g">“Por Magda”. (Cortometraje de ficción). México-Ecuador. 2022. 422. Color. (CCC.).</p>                
+                  <p class="text-left"><a href="https://www.imdb.com/title/tt26711407/?ref_=nm_ov_bio_lk"target="_blank">Haz clic aquí</a></p>
+                </div>
+                <div class="swiper-slide client-box">
+                  <h3 class="text-left title">EDICIÓN</h3>
+                  <img src="assets/reymach.webp" class="client-logo"  onclick="openModal('direccionModal', 'Rey')" />
+                  <p class="text-left ta g">“El Rey de los Machos”. Dir. Fernando Urdapilleta. Star+. Disney. (México. 2022). Editora
+                    Junior.</p>                
+                  <p class="text-left"><a href="https://www.disneyplus.com/es-ec/series/el-rey-de-los-machos/3AYSJUTFm28X"target="_blank">Haz clic aquí</a></p>
+                </div>
+                <div class="swiper-slide client-box">
+                  <img src="assets/logo-3.png" class="client-logo" />
+                  <h3 class="text-left title">Edicion</h3>
+                  <p class="text-left tag">Branding, UI, Website</p>
+                  <p class="text-left"><a href="#">Know More &#8594;</a></p>
+                </div>
+                <div class="swiper-slide client-box">
+                  <img src="assets/logo-1.png" class="client-logo" />
+                  <h3 class="text-left title">Docencia e investigacion</h3>
+                  <p class="text-left tag">Branding, UI, Website</p>
+                  <p class="text-left"><a href="#">Know More &#8594;</a></p>
+                </div>
+                <div class="swiper-slide client-box">
+                  <img src="assets/logo-2.png" class="client-logo" />
+                  <h3 class="text-left title">Otros</h3>
+                  <p class="text-left tag">Branding, UI, Website</p>
+                  <p class="text-left"><a href="#">Know More &#8594;</a></p>
+                </div>
+              </div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Modal 1 -->
+<div id="direccionModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('direccionModal')">&times;</span>
+    <h3>Dirección</h3>
+ 
+    
+</div>
+</div>
+
+    <section id="galeria"></section>
+    <section class="testimonial">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h4 class="sub-heading">Galeria</h4>
+            <h1 class="heading pink">
+              <span class="pink">Proyectos</span>
+              Cine
+              <br />
+              testimonials
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <!-- Swiper -->
+            <div class="swiper-container testimonial-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide testimonial-box yellow">
+                  <h1>Por Magda</h1>
+                  <p>
+                   <img src="assets/IMG-2023CLS4.jpg"
+                  </p>
+                  <div class="text-right">
+                    <p class="name">- John Doe</p>
+                    <p class="designation">Founder, Arrow</p>
+                  </div>
+                </div>
+                <div class="swiper-slide testimonial-box purple">
+                  <h1>Malaga</h1>
+                  <p>
+                    <img src="assets/IMG-2023CLS1.jpg"
+                  </p>
+                  <div class="text-right">
+                    <p class="name">- Rocky Hych</p>
+                    <p class="designation">CTO, Upside Down</p>
+                  </div>
+                </div>
+                <div class="swiper-slide testimonial-box blue">
+                  <h1>Built with Bootstrap</h1>
+                  <p>
+                    <img src="assets/IMG-2023CLS2.jpg"
+                  </p>
+                  <div class="text-right">
+                    <p class="name">- John Doe</p>
+                    <p class="designation">Founder, Arrow</p>
+                  </div>
+                </div>
+                <div class="swiper-slide testimonial-box pink">
+                  <h1>Responsive template</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad
+                  </p>
+                  <div class="text-right">
+                    <p class="name">- Rocky Hych</p>
+                    <p class="designation">CTO, Upside Down</p>
+                  </div>
+                </div>
+                <div class="swiper-slide testimonial-box yellow">
+                  <h1>Pixel Perfect</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad
+                  </p>
+                  <div class="text-right">
+                    <p class="name">- John Doe</p>
+                    <p class="designation">Founder, Arrow</p>
+                  </div>
+                </div>
+                <div class="swiper-slide testimonial-box purple">
+                  <h1>Minimal and Clean</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad
+                  </p>
+                  <div class="text-right">
+                    <p class="name">- Rocky Hych</p>
+                    <p class="designation">CTO, Upside Down</p>
+                  </div>
+                </div>
+                <div class="swiper-slide testimonial-box blue">
+                  <h1>Pixel Perfect</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad
+                  </p>
+                  <div class="text-right">
+                    <p class="name">- John Doe</p>
+                    <p class="designation">Founder, Arrow</p>
+                  </div>
+                </div>
+                <div class="swiper-slide testimonial-box pink">
+                  <h1>Minimal and Clean</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad
+                  </p>
+                  <div class="text-right">
+                    <p class="name">- Rocky Hych</p>
+                    <p class="designation">CTO, Upside Down</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics -->
+    <section class="stats">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 text-center stat-box">
+            <h1 class="purple">
+              <span class="counter">3.2</span>
+              k
+            </h1>
+            <h3>Horas de produccion</h3>
+          </div>
+          <div class="col-md-4 text-center stat-box">
+            <h1 class="blue counter">21</h1>
+            <h3>Proyectos</h3>
+          </div>
+          <div class="col-md-4 text-center stat-box">
+            <h1 class="pink">
+              <span class="counter">18.3</span>
+              k
+            </h1>
+            <h3>Tomas</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Banner -->
+    <section class="contact-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1>Vamos a realizar mas proyectos</h1>
+            <a href="#" class="btn btn-lg btn-primary">Contacto</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container-fluid">
+        <div class="row footer">
+          <div class="col-md-12 text-center">
+            <h1>
+              Carla
+              <br />
+              <span>Larrea</span>
+            </h1>
+            <ul class="social-links">
+              <li>
+                <a href="#"><img src="assets/logoinstawhite.png" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="assets/logofbwhite.png" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="assets/imdb1.png" /></a>
+              </li>
+             
+          </div>
+        </div>
+        <div class="row sub-footer">
+          <div class="col-md-12 text-center">
+            <p>
+              © Copyright by
+              <a href="#" target="_blank">@davidserranoreyes</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
+
+    <!-- Some Javascript -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
+    <!-- Initialize Client Swiper -->
+    <script>
+      var swiper1 = new Swiper('.client-swiper', {
+        slidesPerView: 3,
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 60,
+        // Responsive breakpoints
+        breakpoints: {
+          // when window width is <= 320px
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: '.swiper-pagination',
+          },
+          // when window width is <= 480px
+          480: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          // when window width is <= 640px
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+          },
+        },
+      });
+      // Initialize Testimonial Swiper
+      var swiper2 = new Swiper('.testimonial-swiper', {
+        slidesPerView: 3,
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        spaceBetween: 30,
+        grabCursor: true,
+        freeMode: true,
+        breakpoints: {
+          // when window width is <= 320px
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          // when window width is <= 480px
+          480: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          // when window width is <= 640px
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+        },
+      });
+    </script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script>
+      // Counterup
+      $('.counter').counterUp({
+        time: 1000,
+      });
+
+      // Main Navigation
+      $('#menu-toggle').click(function () {
+        $(this).toggleClass('open'), $('.main-nav').toggleClass('show-it');
+      });
+    </script>
+   <script src="js/custom.js" defer ></script>
+
+  </body>
+</html>
