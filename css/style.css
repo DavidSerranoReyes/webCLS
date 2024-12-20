@@ -511,6 +511,36 @@ ul.main-nav.show-it {
   .swiper-container {
     padding: 4em 0em;
   }
+  /* Ajustar el tamaño de las imágenes dentro de los Swiper slides */
+  .swiper-slide img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Ajustar los botones de navegación de Swiper */
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #000;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  @media (max-width: 768px) {
+    .swiper-button-next,
+    .swiper-button-prev {
+      width: 30px;
+      height: 30px;
+      background-size: 30px 30px;
+    }
+
+    .swiper-container {
+      padding: 2em 0.5em;
+    }
+
+    .client-box {
+      padding: 2em 1em;
+    }
+  }
 
   .client-box {
     padding: 1em;
