@@ -59,6 +59,46 @@ header.hero {
   color: #fff;
   padding-bottom: 80px;
 }
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+  header.hero {
+    background-position: center top;
+    padding-bottom: 40px;
+  }
+
+  #menu-toggle {
+    width: 30px;
+    height: 30px;
+    clear: both;
+    float: right;
+    margin-top: 10px;
+  }
+
+  #menu-toggle span.line {
+    height: 3px;
+    width: 30px;
+  }
+
+  #menu-toggle .hamburger span.line {
+    margin-bottom: 0.35em;
+  }
+
+  #menu-toggle .hamburger span.line:nth-child(1) {
+    width: 25px;
+  }
+
+  #menu-toggle .hamburger span.line:nth-child(3) {
+    width: 15px;
+  }
+
+  #menu-toggle .cross span.line {
+    top: 8px;
+  }
+
+  h1.heading {
+    margin-top: 60px; /* Ajusta este valor según sea necesario */
+  }
+}
 
 header.hero .hero-text {
   margin-top: 20%;
@@ -512,6 +552,12 @@ ul.main-nav.show-it {
     height: auto;
   }
 
+  /* Ajustar el contenedor de Swiper */
+  .swiper-container {
+    width: 100%;
+    padding: 20px 0;
+  }
+
   /* Ajustar los botones de navegación de Swiper */
   .swiper-button-next,
   .swiper-button-prev {
@@ -582,6 +628,10 @@ body {
   z-index: 1000; /* Asegura que el modal esté encima de todo */
   overflow: auto; /* Permite desplazamiento si es necesario */
   transition: opacity 0.3s ease;
+}
+/* Mostrar el modal cuando se agrega la clase 'show' */
+.modal.show {
+  display: block;
 }
 
 /* Estilo del contenido dentro del modal */
