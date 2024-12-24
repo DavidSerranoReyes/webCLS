@@ -278,24 +278,7 @@ h1.heading.pink:after {
   transform: translateY(-50%);
   z-index: 10;
 }
-/* Cambiar la posición de las flechas en dispositivos móviles */
-@media screen and (max-width: 768px) {
-  .swiper-button-next,
-  .swiper-button-prev {
-    position: relative; /* Las flechas se fijan en la parte inferior de la pantalla */
-    bottom: 20px; /* Espaciado desde la parte inferior */
-  }
 
-  .swiper-button-next {
-    right: 20px;
-    left: auto; /* Asegura que la flecha siguiente esté centrada */
-  }
-
-  .swiper-button-prev {
-    left: 20px;
-    right: auto; /* Asegura que la flecha anterior esté centrada */
-  }
-}
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
@@ -311,6 +294,26 @@ h1.heading.pink:after {
   left: -40px;
 }
 
+/* Cambiar la posición de las flechas en dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: fixed; /* Las flechas se fijan en la parte inferior de la pantalla */
+    bottom: 20px; /* Espaciado desde la parte inferior */
+    z-index: 10;
+  }
+  /* Posiciona la flecha derecha a la derecha */
+  .swiper-button-next {
+    right: 20px; /* Asegura que la flecha derecha esté en la parte derecha */
+    left: auto; /* Elimina la posible asignación de 'left' */
+  }
+
+  /* Posiciona la flecha izquierda a la izquierda */
+  .swiper-button-prev {
+    left: 20px; /* Asegura que la flecha izquierda esté en la parte izquierda */
+    right: auto; /* Elimina la posible asignación de 'right' */
+  }
+}
 /* Testimonial */
 .testimonial-box {
   padding: 2em;
