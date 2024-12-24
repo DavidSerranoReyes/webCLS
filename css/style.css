@@ -57,46 +57,62 @@ header.hero {
   -o-background-size: cover;
   background-size: cover;
   color: #fff;
-  padding-bottom: 80px;
+  padding-bottom: 100px;
 }
-/* Ajustes para dispositivos móviles */
 @media (max-width: 768px) {
   header.hero {
-    background-position: center;
-    padding-bottom: 40px;
+    background-attachment: scroll; /* Mantener el efecto de paralaje en móviles */
   }
+}
 
+#menu-toggle {
+  width: 30px;
+  height: 30px;
+  clear: both;
+  float: right;
+  margin-top: 10px;
+}
+
+#menu-toggle span.line {
+  height: 3px;
+  width: 30px;
+}
+
+#menu-toggle .hamburger span.line {
+  margin-bottom: 0.35em;
+}
+
+#menu-toggle .hamburger span.line:nth-child(1) {
+  width: 25px;
+}
+
+#menu-toggle .hamburger span.line:nth-child(3) {
+  width: 15px;
+}
+
+#menu-toggle .cross span.line {
+  top: 8px;
+}
+@media (max-width: 768px) {
   #menu-toggle {
-    width: 30px;
-    height: 30px;
-    clear: both;
-    float: right;
-    margin-top: 10px;
+    position: relative;
+    z-index: 10;
   }
-
-  #menu-toggle span.line {
-    height: 3px;
-    width: 30px;
+  #menu {
+    position: absolute; /* Asegura que el menú se posicione de manera independiente */
+    top: 50px; /* Ajusta esta distancia para evitar el solapamiento con el contenido */
+    z-index: 9; /* Asegúrate de que el menú no esté por encima del icono del menú */
   }
+}
 
-  #menu-toggle .hamburger span.line {
-    margin-bottom: 0.35em;
-  }
+h1.heading {
+  margin-top: 80px; /* Ajusta este valor según sea necesario */
+}
 
-  #menu-toggle .hamburger span.line:nth-child(1) {
-    width: 25px;
-  }
-
-  #menu-toggle .hamburger span.line:nth-child(3) {
-    width: 15px;
-  }
-
-  #menu-toggle .cross span.line {
-    top: 8px;
-  }
-
+/* Solo se aplica en dispositivos con un ancho máximo de 768px */
+@media (max-width: 768px) {
   h1.heading {
-    margin-top: 60px; /* Ajusta este valor según sea necesario */
+    margin-top: 80px !important; /* Mueve el título hacia abajo en móviles */
   }
 }
 
@@ -129,6 +145,7 @@ header.hero h1 span,
 header.hero h3 {
   font-weight: 300;
 }
+
 header.hero .btn {
   margin: 3em 0;
 }
@@ -175,6 +192,7 @@ h1.heading {
   position: relative;
   padding-bottom: 10px;
 }
+
 h1.heading span {
   font-weight: 600;
 }
@@ -264,20 +282,18 @@ h1.heading.pink:after {
 @media screen and (max-width: 768px) {
   .swiper-button-next,
   .swiper-button-prev {
-    position: fixed; /* Las flechas se fijan en la parte inferior de la pantalla */
+    position: relative; /* Las flechas se fijan en la parte inferior de la pantalla */
     bottom: 20px; /* Espaciado desde la parte inferior */
-    transform: translateX(-50%); /* Centrarlas horizontalmente */
-    left: 50%; /* Centrarlas horizontalmente */
   }
 
   .swiper-button-next {
-    right: auto;
-    left: 50%; /* Asegura que la flecha siguiente esté centrada */
+    right: 20px;
+    left: auto; /* Asegura que la flecha siguiente esté centrada */
   }
 
   .swiper-button-prev {
-    right: auto;
-    left: 50%; /* Asegura que la flecha anterior esté centrada */
+    left: 20px;
+    right: auto; /* Asegura que la flecha anterior esté centrada */
   }
 }
 .swiper-button-next:hover,
@@ -535,13 +551,24 @@ ul.main-nav.show-it {
   }
   header.hero {
     text-align: center;
-    padding-bottom: 0;
+    padding-bottom: 20px;
     background-size: cover;
   }
   header.hero h1 {
-    font-size: 2em;
-    margin-top: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4.5em;
+    font-weight: 600;
+    line-height: 1.4em;
+    margin-top: 800px; /* Valor predeterminado */
   }
+
+  @media (max-width: 768px) {
+    header.hero h1 {
+      font-size: 2em; /* Tamaño ajustado para dispositivos móviles */
+      margin-top: 100px; /* Ajusta el espacio superior del título en dispositivos móviles */
+    }
+  }
+
   header.hero h3 {
     font-size: 1.2em;
     line-height: 1.6em;
